@@ -1,0 +1,74 @@
+#########printing 'L' letter########
+for row in range(4):
+    for col in range(3):
+        if (col==0 or (row==3 and row>0)):
+            output = " "
+            output += "x"
+            print(output,end="")
+        else:
+            print(end=" ")
+    print()
+##############printing 'C' letter##########
+for row in range(4):
+    for col in range(3):
+        if ((col==0 or row==0) or (row==3 and (col>0 or row>0))):
+            output=" "
+            output+= "x"
+            print(output,end="")
+        else:
+            print(end=" ")
+    print()
+ #############Two dimentional list############3
+ matrix = [[1,2,3],
+          [4,5,6],
+          [7,8,9]]
+print(matrix[2][1])
+ ans: it will print 5
+ ###nested for loop####
+for row in matrix:
+    print(row)
+    for item in row:
+        print(item) 
+output: row:[1, 2, 3]
+item:1
+2
+3
+[4, 5, 6]
+4
+5
+6
+[7, 8, 9]
+7
+8
+9  
+#############list methods#################
+numbers = [5,2,1,7,4]
+#numbers.insert(0,10)
+#numbers.append(13)
+#numbers.remove(1)
+#numbers.clear()
+#numbers.pop()
+#print(numbers.index(2))
+#print(numbers)
+numbers.append(5)
+#print(numbers)
+#print(numbers.count(5))
+#numbers.sort()
+#numbers.reverse()
+#num=numbers.copy()
+#print(num)
+#print(numbers)
+#########3remove duplicates###########
+lis1=[2,4,5,6,2,4,7]
+lis2=[]
+'''for item in lis1:
+    if (lis1.count(item)>1):
+        lis1.remove(item)
+        print(lis1)'''
+for number in lis1:
+    if number not in lis2:
+        lis2.append(number)
+print(lis2)
+
+        
+        
