@@ -70,5 +70,8 @@ for number in lis1:
         lis2.append(number)
 print(lis2)
 
-        
+########################un packing###########3
+l = (1,2,3)
+x,y,z = l
+print(z)
         
