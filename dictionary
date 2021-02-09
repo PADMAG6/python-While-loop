@@ -1,3 +1,4 @@
+#################3dictionry#########################
 phone = input("Phone: ")
 digits_mapping = {
     "1" : "One",
@@ -9,4 +10,16 @@ output = ""
 for ch in phone:
     print(ch)
     output += digits_mapping.get(ch,"!") + " "
+print(output)
+##################emoji prints####################33
+emoji = input(">")
+words= emoji.split(' ')
+#print(words)
+mesage= {
+    ":)" : "😊",                         #for emiji in windows pycharm : windows+>.
+    ":(" : "😂"
+    }
+output = ""
+for word in words:
+    output+= mesage.get(word, word)
 print(output)
