@@ -1,0 +1,105 @@
+def square(number):
+    res= number * number
+    return res
+
+w=square(3)
+print(w)
+###########emoji_converter function################
+'''def emoji_converter(mes):
+    words = mes.split(" ")
+    print(words)
+    emoji = {
+       ":)" : "😊",
+       ":(" : "😂"
+       }
+    output = ""
+    for word in words:
+        output += emoji.get(word,word) + " "
+    return output
+
+mes = input(">")
+print(emoji_converter(mes))'''
+
+############try_exceptions################
+try:
+    age = int(input('Age: '))
+    income = 20000
+    risk = income / age
+    print(age)
+except ZeroDivisionError:
+    print('Age cannot be 0')
+except ValueError:
+    print('Invalid value')
+ 
+##output: if exit code 1 (the code is crushes) so we need to make it proper.here humen givivg input having some issues.
+exit code 0 means the code is executing properly.##
+    
+###############3python _classes################
+class Point:
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+point1 = Point()
+point1.draw()
+
+###########class_constructor############
+class Point:
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+point1 = Point(10,20)
+print(point1.x)
+
+###########2_example#######
+class Person:
+    def __init__(self,name):
+        self.name = name
+
+    def talk(self):
+        print("talk")
+
+john= Person("Padma")
+print(john.name)
+#################33_Example############
+class Person:
+    def __init__(self,name):
+        self.name = name
+
+    def talk(self):
+        print(f"hi, i am {self.name}")
+
+john= Person("Padma")
+john.talk()
+
+bob = Person("bob smith")
+bob.talk()
+
+#####################python_inheritence########################
+class Animal:
+    def walk(self):
+        print("walk")
+
+class Dog(Animal):
+    def bark(self):
+        print("bark")
+
+class Cat(Animal):
+    def be_annoy(self):
+        print("annoying")
+
+dog1 = Dog()
+dog1.walk()
+dog1.bark()
+
+
+
