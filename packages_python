@@ -1,0 +1,30 @@
+########shipping.py##################
+def calc_shipping():
+    print("calc_shipping")
+    
+######importing package from shipping.py file#########  #here ecommers is a package, shipping is a module #######   
+#import ecommers.shipping
+from ecommers.shipping import calc_shipping()
+ecommers.shipping.calc_shipping()    
+#here ecommers is a python package folder, i created and folder have the __init__.py file, shipping.py file.   
+   
+##########pick random guy from list#####
+import random
+
+l1 = ["Jan","neel","shiv","guru"]
+leader=random.choice(l1)
+print(leader)  
+
+################# pick random numers in dice##############
+import random
+
+
+class Dice:
+
+    def roll(self):
+        f1= random.randint(1,6)
+        f2=random.randint(1,6)
+        return f1,f2
+
+w= Dice()
+print(w.roll())
