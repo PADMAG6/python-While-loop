@@ -1,0 +1,33 @@
+              ### Python module importing from other file###########
+                 import convertor
+                 from convertor import lbs_to_kg
+
+                print(lbs_to_kg(100))
+                #print(convertor.kg_to_lbs(75))
+ 
+            ###here the conertor.py file#############
+               def lbs_to_kg(weight):
+                   return weight * 0.45
+
+               def kg_to_lbs(weight):
+                   return weight / 0.45
+                   
+                                      
+                   
+                   
+                #########3python module importing from other file###########
+                
+                  from utils import find_max
+                  numbers = [10,3,6,2]
+                  max1= find_max(numbers)
+                  print(max1) 
+                   
+                #####here is utils.py##################
+                def find_max(numbers):
+                    max1 = numbers[0]
+                    for number in numbers:
+                        if number > max1:
+                           max1 = number
+                           return max1
+                   
+                   
