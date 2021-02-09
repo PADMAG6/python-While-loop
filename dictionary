@@ -23,3 +23,19 @@ output = ""
 for word in words:
     output+= mesage.get(word, word)
 print(output)
+##########################3functions#############
+def greet_user():   
+    print("hello")     #these 3 lines are function declaration
+    print("hi")
+
+print("start")
+greet_user()        #this is function calling method, i.e function start will executing here.
+#############function parameters###################
+def greet_user(name):
+    print(f"hello {name}")
+    print("hi")                    #here name is paramerter
+
+print("start")
+greet_user("jai")            #here jai is argument
+  # for d parameter we r passing value is argument in python
+
