@@ -26,5 +26,11 @@ if q == q[::-1]:
     print("palindrom")
 else:
     print("not palindrom")
+    
+    
+//print * in triangle shape 
+for i in range(0,5):
+    print("*"*i)  //multiplying '*'(star) charecter with i times.
+
         
         
